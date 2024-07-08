@@ -11,7 +11,11 @@ export default defineNuxtConfig({
       meta: [{ hid: "description", name: "description", content: "Харизмы" }],
     },
   },
-
+  runtimeConfig: {
+    public: {},
+    TELEGRAM_BOT_TOKEN: process.env.TELEGRAM_BOT_TOKEN,
+    TELEGRAM_CHAT_ID: process.env.TELEGRAM_CHAT_ID,
+  },
   css: ["normalize.css", "vue-final-modal/style.css"],
   modules: ["@nuxtjs/tailwindcss", "@hypernym/nuxt-gsap"],
 

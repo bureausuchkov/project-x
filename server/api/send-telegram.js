@@ -1,9 +1,9 @@
 export default defineEventHandler(async (event) => {
   const body = await readBody(event);
-
+  const config = useRuntimeConfig();
   async function sendTelegram(data) {
-    const token = process.env.TELEGRAM_BOT_TOKEN;
-    const idChat = process.env.TELEGRAM_CHAT_ID;
+    const token = config.TELEGRAM_BOT_TOKEN;
+    const idChat = config.TELEGRAM_CHAT_ID;
 
     // Объект для перевода ключей
     const translations = {

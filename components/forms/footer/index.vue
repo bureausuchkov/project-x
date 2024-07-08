@@ -1,7 +1,12 @@
 <template>
   <div class="relative pb-2">
-    <div class="flex items-center bg-white absolute inset-0 z-20 text-lg text-black" v-if="sucess">
-      <span> Спасибо, ваша заявка отправлена! Мы свяжемся с вами в ближайшее время. </span>
+    <div
+      class="flex items-center bg-white absolute inset-0 z-20 text-lg text-black"
+      v-if="success"
+    >
+      <span>
+        Спасибо, ваша заявка отправлена! Мы свяжемся с вами в ближайшее время.
+      </span>
     </div>
     <form class="md:mb-10" @submit.prevent="submitForm">
       <label class="block relative group md:mt-[3.75rem] mt-5">
@@ -17,16 +22,26 @@
           Почта*
         </span>
       </label>
-      <div v-if="!isFormCorrect && !v$.form.email.required.$response" class="text-sm text-red">
+      <div
+        v-if="!isFormCorrect && !v$.form.email.required.$response"
+        class="text-sm text-red"
+      >
         {{ v$.form.email.required.$message }}
       </div>
-      <span v-if="!isFormCorrect && v$.form.email.$error" class="text-sm text-red">
+      <span
+        v-if="!isFormCorrect && v$.form.email.$error"
+        class="text-sm text-red"
+      >
         Введите корректный адрес электронной почты
       </span>
 
       <div class="md:mt-10 mt-5">
-        <label class="flex items-center flex-wrap gap-y-2 font-petrov cursor-pointer">
-          <span class="relative block w-[0.9375rem] md:w-5 h-[0.9375rem] md:h-5 border-2 mr-2.5">
+        <label
+          class="flex items-center flex-wrap gap-y-2 font-petrov cursor-pointer"
+        >
+          <span
+            class="relative block w-[0.9375rem] md:w-5 h-[0.9375rem] md:h-5 border-2 mr-2.5"
+          >
             <input
               v-model="form.accept"
               class="bg-transparent border-0 peer absolute opacity-0 pointer-events-none left-[-6250rem]"
@@ -35,18 +50,35 @@
             <span
               class="md:w-sm md:h-[0.75rem] w-full h-full absolute peer-checked:opacity-100 opacity-0 transition-all md:top-[0.125rem] md:left-[0.0625rem]"
             >
-              <img src="/images/icons/black-check.svg" width="14" height="12" alt="Галочка" />
+              <img
+                src="/images/icons/black-check.svg"
+                width="14"
+                height="12"
+                alt="Галочка"
+              />
             </span>
           </span>
           Согласен с&nbsp;
-          <a class="hover:no-underline underline" href="pdfs/policy.pdf" download> политикой конфиденциальности </a>
+          <a
+            class="hover:no-underline underline"
+            href="pdfs/policy.pdf"
+            download
+          >
+            политикой конфиденциальности
+          </a>
         </label>
-        <div v-if="!isFormCorrect && !v$.form.accept.required.$response" class="text-sm text-red mt-2">
+        <div
+          v-if="!isFormCorrect && !v$.form.accept.required.$response"
+          class="text-sm text-red mt-2"
+        >
           {{ v$.form.accept.required.$message }}
         </div>
       </div>
       <div class="md:mt-[3.75rem] mt-10">
-        <button class="relative uppercase group md:text-lg text-sm" @click="showModal">
+        <button
+          class="relative uppercase group md:text-lg text-sm"
+          @click="showModal"
+        >
           подписаться
           <span
             class="absolute -bottom-1 left-0 w-full h-0.5 bg-black transition duration-300 origin-right scale-x-100 group-hover:scale-x-0"
@@ -61,38 +93,37 @@
 </template>
 
 <script setup>
-  import useVuelidate from "@vuelidate/core";
-  import { required, helpers, email } from "@vuelidate/validators";
+import useVuelidate from "@vuelidate/core";
+import { required, helpers, email } from "@vuelidate/validators";
 
-  const openAndroidApp = "tg://t.me/USERNAME";
+const openAndroidApp = "tg://t.me/USERNAME";
 
-  const sucess = ref(false);
-  const isFormCorrect = ref(true);
+const isFormCorrect = ref(true);
 
-  const form = ref({
-    email: "",
-    accept: "",
-  });
+const form = ref({
+  email: "",
+  accept: "",
+});
 
-  const rules = computed(() => ({
-    form: {
-      email: {
-        required: helpers.withMessage("Поле обязательно к заполнению", required),
-        email,
-      },
-      accept: {
-        required: helpers.withMessage("Поле обязательно к заполнению", required),
-      },
+const rules = computed(() => ({
+  form: {
+    email: {
+      required: helpers.withMessage("Поле обязательно к заполнению", required),
+      email,
     },
-  }));
+    accept: {
+      required: helpers.withMessage("Поле обязательно к заполнению", required),
+    },
+  },
+}));
 
-  const v$ = useVuelidate(rules, { form });
+const v$ = useVuelidate(rules, { form });
+const { success, sendForm } = useSendForm("Подписка на рассылку");
+const submitForm = async () => {
+  isFormCorrect.value = await v$.value.$validate();
 
-  const submitForm = async () => {
-    isFormCorrect.value = await v$.value.$validate();
+  if (!isFormCorrect.value) return;
 
-    if (!isFormCorrect.value) return;
-
-    sucess.value = true;
-  };
+  await sendForm(form.value);
+};
 </script>

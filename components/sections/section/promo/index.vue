@@ -11,7 +11,9 @@
       </div>
     </di>
     <div class="grid sm:grid-cols-8 grid-cols-2">
-      <div class="font-petrov md:text-[1.125rem] sm:col-start-3 col-end-9 xl:pt-24 pt-20 leading-[100%] sm:ml-0 max-w-[26.875rem]">
+      <div
+        class="font-petrov md:text-[1.25rem] sm:col-start-3 col-end-9 xl:pt-24 pt-20 md:leading-[125%] leading-none sm:ml-0 max-w-[26.875rem]"
+      >
         <div word>
           Мы верим, что истинная сила кроется в том, как мы делаем свою работу — с любовью, страстью и харизмой.
         </div>
@@ -21,7 +23,7 @@
         </div>
       </div>
       <div
-        class="font-medium sm:col-start-4 col-end-9 xl:pt-24 pt-20 2xl:text-[2.75rem] md:text-[1.5rem] text-sm leading-[100%] sm:ml-0"
+        class="font-medium sm:col-start-4 col-end-9 xl:pt-24 pt-20 2xl:text-[2.75rem] md:text-[1.5rem] text-sm md:leading-[125%] leading-none sm:ml-0"
       >
         <div word>Наша команда — это союз</div>
         <div word>харизматичных людей, привносящих</div>

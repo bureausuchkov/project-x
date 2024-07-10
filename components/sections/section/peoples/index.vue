@@ -18,7 +18,7 @@
       >
         <div class="flex md:flex-row flex-col gap-5 pr-5">
           <div>
-            <span class="block md:hidden mb-3 text-[0.625rem]"> { 1 } </span>
+            <!--<span class="block md:hidden mb-3 text-[0.625rem]"> { 1 } </span>-->
             <div class="people-image overflow-hidden">
               <img
                 class="object-cover xl:max-w-none min-w-[15.5625rem] 2xl:w-[27.8125rem] xl:w-[21.75rem] w-auto"
@@ -31,16 +31,16 @@
           </div>
 
           <div class="flex flex-col">
-            <span class="hidden md:block mb-5"> { 1 } </span>
-            <p class="font-petrov mb-5 text-[0.75rem] md:text-[1.125rem]">
-              «Наше единение, наши идеи и наша преданность своей профессии делают нас уникальной компанией.»
+            <!--<span class="hidden md:block mb-5"> { 1 } </span>-->
+            <p class="font-petrov mb-5 text-[0.875rem] md:text-[1.25rem]">
+              «Наше единение, наши идеи и наша преданность своей профессии делают нас уникальной компанией»
             </p>
             <p class="font-medium md:text-lg text-sm mb-2 md:mb-2.5 mt-auto">
               Александр <br />
               Мильченко
             </p>
-            <p class="font-petrov text-sm md:text-md mb-2.5">Основатель</p>
-            <p class="font-petrov text-sm md:text-md">Покоритель Килиманджаро</p>
+            <p class="font-petrov text-sm md:text-[1.25rem] mb-2.5">основатель</p>
+            <p class="font-petrov text-sm md:text-[1.25rem]">покоритель Килиманджаро</p>
           </div>
         </div>
       </div>
@@ -49,7 +49,7 @@
       >
         <div class="flex md:flex-row flex-col gap-5 pr-5">
           <div>
-            <span class="block md:hidden mb-3 text-[0.625rem]"> { 2 } </span>
+            <!--<span class="block md:hidden mb-3 text-[0.625rem]"> { 2 } </span>-->
             <div class="people-image overflow-hidden">
               <img
                 class="object-cover xl:max-w-none min-w-[15.5625rem] 2xl:w-[34.875rem] xl:w-[23.75rem] w-auto"
@@ -62,17 +62,17 @@
           </div>
 
           <div class="flex flex-col">
-            <span class="hidden md:block mb-5"> { 2 } </span>
-            <p class="font-petrov mb-5 text-[0.75rem] md:text-[1.125rem]">
+            <!--<span class="hidden md:block mb-5"> { 2 } </span>-->
+            <p class="font-petrov mb-5 text-[0.875rem] md:text-[1.25rem]">
               «Мы создаем команды единомышленников, а не коллег. Только так мы способны реализовывать цели, которые
-              кажутся недостижимыми для других.»
+              кажутся недостижимыми для других»
             </p>
             <p class="font-medium md:text-lg text-sm mb-2 md:mb-2.5 mt-auto">
               Александр <br />
               Перминов
             </p>
-            <p class="font-petrov text-sm md:text-md mb-2.5">Основатель</p>
-            <p class="font-petrov text-sm md:text-md">Спортсмен-триатлонист</p>
+            <p class="font-petrov text-sm md:text-[1.25rem] mb-2.5">основатель</p>
+            <p class="font-petrov text-sm md:text-[1.25rem]">спортсмен-триатлонист</p>
           </div>
         </div>
       </div>
@@ -81,7 +81,7 @@
       >
         <div class="flex md:flex-row flex-col gap-5 pr-5">
           <div>
-            <span class="block md:hidden mb-3 text-[0.625rem]"> { 3 } </span>
+            <!--<span class="block md:hidden mb-3 text-[0.625rem]"> { 3 } </span>-->
             <div class="people-image overflow-hidden">
               <img
                 class="object-cover xl:max-w-none min-w-[15.5625rem] 2xl:w-[34.875rem] xl:w-[23.75rem] w-auto"
@@ -94,16 +94,16 @@
           </div>
 
           <div class="flex flex-col">
-            <span class="hidden md:block mb-5">{ 3 }</span>
-            <p class="font-petrov mb-5 text-[0.75rem] md:text-[1.125rem]">
-              «Доброта - это лучший инструмент, чтобы предоставить нашим клиентам выдающийся сервис.»
+            <!--<span class="hidden md:block mb-5">{ 3 }</span>-->
+            <p class="font-petrov mb-5 text-[0.875rem] md:text-[1.25rem]">
+              «Доброта - это лучший инструмент, чтобы предоставить нашим клиентам выдающийся сервис»
             </p>
             <p class="font-medium md:text-lg text-sm mb-2 md:mb-2.5 mt-auto">
               Максим <br />
               Замятин
             </p>
-            <p class="font-petrov text-sm md:text-md mb-2.5">Основатель</p>
-            <p class="font-petrov text-sm md:text-md">Заядлый мотоциклист</p>
+            <p class="font-petrov text-sm md:text-[1.25rem] mb-2.5">основатель</p>
+            <p class="font-petrov text-sm md:text-[1.25rem]">заядлый мотоциклист</p>
           </div>
         </div>
       </div>

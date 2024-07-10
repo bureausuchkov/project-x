@@ -11,7 +11,7 @@
       <p
         class="welcome-words md:col-start-1 md:col-end-7 uppercase 2xl:text-2xl xl:text-xl md:text-[4.5rem] text-[2.1875rem] tracking-[-0.07em] 2xl:leading-[7.3125rem] leading-[100%] md:pb-[4.375rem] pb-10"
       >
-        <span class="block">пригашаем</span>
+        <span class="block">приглашаем</span>
         <span class="block ml-5 md:ml-[4.5rem] lx:ml-[14.5rem] text-nowrap">стать частью </span>
         <span class="block ml-5 md:ml-[4.5rem] lx:ml-[14.5rem] text-orange text-nowrap">нашей</span>
         <span class="block text-orange">команды</span>

@@ -19,33 +19,33 @@
     </div>
     <div
       qualityDescr
-      class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov md:text-[1.125rem] max-w-[26.875rem] md:max-w-none"
+      class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov md:text-[1.25rem] max-w-[26.875rem] md:max-w-none leading-tight"
     >
       Мы уверены, что великие компании строятся на
     </div>
     <div
       qualityDescr
-      class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov md:text-[1.125rem] max-w-[26.875rem] md:max-w-none"
+      class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov md:text-[1.25rem] max-w-[26.875rem] md:max-w-none leading-tight"
     >
-      страстных людях, увлеченных своим делом. Говорят,
+      страстных людях, увлеченных своим делом.
     </div>
     <div
       qualityDescr
-      class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov md:text-[1.125rem] max-w-[26.875rem] md:max-w-none"
+      class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov md:text-[1.25rem] max-w-[26.875rem] md:max-w-none leading-tight"
     >
-      что наш энтузиазм заряжает всех вокруг, а наши
+      Говорят, что наш энтузиазм заряжает всех
     </div>
     <div
       qualityDescr
-      class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov md:text-[1.125rem] max-w-[26.875rem] md:max-w-none"
+      class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov md:text-[1.25rem] max-w-[26.875rem] md:max-w-none leading-tight"
     >
-      идеи становятся искрами, зажигающими огонь
+      вокруг, а наши идеи становятся искрами,
     </div>
     <div
       qualityDescr
-      class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov md:text-[1.125rem] max-w-[26.875rem] md:max-w-none"
+      class="md:col-start-3 md:col-end-7 lg:col-end-5 font-petrov md:text-[1.25rem] max-w-[26.875rem] md:max-w-none leading-tight"
     >
-      инноваций.
+      зажигающими огонь инноваций.
     </div>
     <div
       class="md:col-start-4 md:col-end-9 xl:text-[2.75rem] md:text-28 text-[1rem] mt-[3.75rem] md:mt-[10rem] pr-10 md:max-w-none max-w-[20.1875rem] md:ml-0 ml-auto"

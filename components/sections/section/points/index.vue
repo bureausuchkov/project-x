@@ -6,7 +6,7 @@
           <div class="z-10 max-w-[26.875rem] min-w-[14rem] xl:mr-[9.375rem] md:mr-[5rem] mr-[1.6875rem]">
             <div class="md:pb-5 pb-2.5 pd:text-sm text-[0.625rem]">{ 1 }</div>
             <div class="pb-2.5 md:text-lg text-sm uppercase font-medium">Синергия</div>
-            <div class="font-petrov md:text-[1.125rem] text-[0.75rem]">
+            <div class="font-petrov md:text-[1.25rem] text-[0.75rem]">
               Гармоничное объединение для движения к результату, когда 1+1=5
             </div>
           </div>
@@ -23,7 +23,7 @@
             <div class="max-w-[26.875rem] min-w-[14rem] xl:ml-[7.5625rem] md:ml-[2.5rem] ml-[1.25rem] mb-5">
               <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 2 }</p>
               <p class="mb-2.5 md:text-lg text-sm uppercase font-medium">Любовь</p>
-              <p class="font-petrov md:text-[1.125rem] text-[0.75rem]">
+              <p class="font-petrov md:text-[1.25rem] text-[0.75rem]">
                 Искренняя заинтересованность в жизни и развитии дела, клиентов, жизни людей. Мы делаем все важное для
                 результата сами, проактивно
               </p>
@@ -35,7 +35,7 @@
             <div class="max-w-[26.875rem] min-w-[14rem]">
               <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 3 }</p>
               <p class="mb-2.5 md:text-lg text-sm uppercase font-medium">Развитие</p>
-              <p class="font-petrov md:text-[1.125rem] text-[0.75rem]">
+              <p class="font-petrov md:text-[1.25rem] text-[0.75rem]">
                 Постоянные изменения себя через знания, опыт и обучение. Каждый день быть лучше, чем вчера. Обогатить
                 города проектами
               </p>
@@ -55,7 +55,7 @@
           >
             <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 4 }</p>
             <p class="mb-2.5 md:text-lg text-sm uppercase font-medium">Эффективность</p>
-            <p class="font-petrov md:text-[1.125rem] text-[0.75rem]">
+            <p class="font-petrov md:text-[1.25rem] text-[0.75rem]">
               Получение максимального результата с приложением максимальных усилий
             </p>
           </div>

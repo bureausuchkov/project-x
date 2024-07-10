@@ -3,20 +3,19 @@
     <div class="relative z-20 numbers flex items-center" ref="scrollNumbers">
       <div class="flex flex-nowrap md:py-25 py-20">
         <div class="number-point-1 shrink-0 max-w-[16.5rem] md:max-w-none md:w-auto w-screen">
-          <div class="z-10 max-w-[26.875rem] min-w-[14rem] xl:mr-[9.375rem] md:mr-[5rem] mr-[1.6875rem]">
+          <div class="z-10 max-w-[27.875rem] min-w-[14rem] xl:mr-[9.375rem] md:mr-[5rem] mr-[1.6875rem]">
             <div class="md:pb-5 pb-2.5 pd:text-sm text-[0.625rem]">{ 1 }</div>
             <div class="pb-2.5 md:text-lg text-sm uppercase font-medium">133 балла</div>
-            <div class="font-petrov md:text-[1.125rem] text-[0.75rem]">
-              Гармоничное объединение для движения к результату, когда 1+1=5
-            </div>
+            <div class="pb-2.5 md:text-[1.25rem] text-sm font-petrov">средний IQ сотрудников компании,</div>
+            <div class="font-petrov md:text-[1.25rem] text-[0.75rem]">сообразительность и креативность - наш конек</div>
           </div>
         </div>
         <div class="number-point-1 shrink-0 max-w-[16.5rem] md:max-w-none md:w-auto w-screen">
-          <div class="z-10 mt-20 xl:mr-[16.625rem] md:mr-[7.5rem] mr-[1.6875rem]">
+          <div class="z-10 mt-20 xl:mr-[10rem] md:mr-[5rem] mr-[2rem]">
             <div class="mb-2">
               <div class="md:pb-5 pb-2.5 pd:text-sm text-[0.625rem]">{ 2 }</div>
-              <div class="pb-2.5 md:text-lg text-sm uppercase font-medium">1000 футбольных полей</div>
-              <div class="font-petrov md:text-[1.125rem] text-[0.75rem]">
+              <div class="pb-2.5 md:text-lg text-sm uppercase font-medium">1 000 футбольных полей</div>
+              <div class="font-petrov md:text-[1.25rem] text-[0.75rem]">
                 равен по площади наш земельный банк <br class="md:block hidden" />
                 мы будем строить!
               </div>
@@ -28,11 +27,13 @@
               src="/images/points/point-3.png"
               alt="Здание"
             />
-            <div class="max-w-[26.875rem] min-w-[14rem] xl:ml-[7.5625rem] md:ml-[2.5rem] ml-[1.25rem] mb-5">
+            <div class="max-w-[28.875rem] min-w-[14rem] xl:ml-[7.5625rem] md:ml-[2.5rem] ml-[1.25rem] mb-5">
               <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 3 }</p>
               <p class="mb-2.5 md:text-lg text-sm uppercase font-medium">91% сотрудников</p>
-              <p class="font-petrov md:text-[1.125rem] text-[0.75rem] max-w-[25rem]">
-                в хорошем настроении и высокой энергии по матрице эмоционального состояния Д.Карузо мы бодры, веселы...
+              <p class="font-petrov md:text-[1.25rem] text-[0.75rem] max-w-[27rem]">
+                в хорошем настроении и высокой энергии по матрице эмоционального состояния Д.Карузо
+                <br class="md:block hidden" />
+                мы бодры, веселы...
               </p>
             </div>
           </div>
@@ -42,8 +43,9 @@
             <div class="max-w-[26.875rem] min-w-[14rem]">
               <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 4 }</p>
               <p class="mb-2.5 md:text-lg text-sm uppercase font-medium">516 лет</p>
-              <p class="font-petrov md:text-[1.125rem] text-[0.75rem]">
-                разницы между открытием Америки и нашим, но у нас тоже амбициозные планы
+              <p class="font-petrov md:text-[1.25rem] text-[0.75rem]">
+                разницы между открытием Америки и нашим, <br class="md:block hidden" />
+                но у нас тоже амбициозные планы
               </p>
             </div>
             <img
@@ -60,16 +62,16 @@
             <div class="max-w-[26.875rem] min-w-[14rem] pr-5 mb-5 xl:ml-[15.625rem] ml-25">
               <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 5 }</p>
               <p class="mb-2.5 md:text-lg text-sm uppercase font-medium">16 лет</p>
-              <p class="font-petrov md:text-[1.125rem] text-[0.75rem]">
+              <p class="font-petrov md:text-[1.25rem] text-[0.75rem]">
                 мы назывались СБК <br class="md:block hidden" />
                 мы меняемся, не изменяя себе!
               </p>
             </div>
-            <div class="max-w-[26.875rem] min-w-[14rem] pr-5 mb-5 mt-auto">
+            <div class="max-w-[28.875rem] min-w-[14rem] pr-5 mb-5 mt-auto">
               <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 6 }</p>
               <p class="mb-2.5 md:text-lg text-sm uppercase font-medium">37 лет</p>
-              <p class="font-petrov md:text-[1.125rem] text-[0.75rem]">
-                средний возраст соратников внутри коллектива <br class="md:block hidden" />
+              <p class="font-petrov md:text-[1.25rem] text-[0.75rem]">
+                средний возраст соратников внутри коллектива, <br class="md:block hidden" />
                 все абсолютно молоды душой
               </p>
             </div>
@@ -81,11 +83,11 @@
       class="numbers-words flex flex-nowrap items-center absolute h-svh top-0 z-10 lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] text-orange uppercase pointer-events-none"
       ref="scrollNumbersWords"
     >
-      <span class="number-word-1 block xl:pr-[18.8125rem] md:pr-[7.5rem] pr-10 shrink-0 min-w-[100vw]">в ци</span>
-      <span class="number-word-1 block xl:pr-[18.8125rem] md:pr-[7.5rem] pr-10 shrink-0 min-w-[100vw] text-center">
+      <span class="number-word-1 block xl:pr-[18.8125rem] md:pr-[7.5rem] pr-10 shrink-0 min-w-[50vw]">в ци</span>
+      <span class="number-word-1 block xl:pr-[18.8125rem] md:pr-[7.5rem] pr-10 shrink-0 min-w-[50vw] text-center">
         фр
       </span>
-      <span class="number-word-1 block md:pr-[3.125rem] pr-10 shrink-0 min-w-[100vw]">ах</span>
+      <span class="number-word-1 block md:pr-[3.125rem] pr-10 shrink-0 min-w-[50vw]">ах</span>
     </div>
   </div>
 </template>
@@ -112,7 +114,7 @@
     });
 
     app.$gsap.to(words, {
-      xPercent: -90 * (words.length - 1),
+      xPercent: -110 * (words.length - 1),
       yPercent: 25,
       ease: "none",
       scrollTrigger: {

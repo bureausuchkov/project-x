@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Benzin";
+  src: url("~/assets/fonts/benzin/Benzin-Regular.woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Benzin";
+  src: url("~/assets/fonts/benzin/Benzin-Medium.woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Petrov";
+  src: url("~/assets/fonts/petrov/PetrovSans-Trial-Regular.woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("~/assets/fonts/manrope/Manrope-Regular.woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+/* Баг со шрифтами 2 недели боли */
+
+/* Это убрать скролл бар */
+/*html * {
+  outline: 100px;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  min-height: 100svh;
+  overflow: hidden;
+}
+body > * {
+  overflow: auto;
+}*/

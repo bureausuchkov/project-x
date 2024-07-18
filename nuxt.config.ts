@@ -7,6 +7,7 @@ export default defineNuxtConfig({
         lang: "RU",
       },
       title: "Харизмы",
+
       link: [{ rel: "shortcut icon", href: "favicon.ico" }],
       meta: [{ hid: "description", name: "description", content: "Харизмы" }],
     },
@@ -17,13 +18,7 @@ export default defineNuxtConfig({
     TELEGRAM_CHAT_ID: process.env.TELEGRAM_CHAT_ID,
   },
   css: ["normalize.css", "vue-final-modal/style.css"],
-  modules: ["@nuxtjs/tailwindcss", "@hypernym/nuxt-gsap"],
-
-  gsap: {
-    extraPlugins: {
-      scrollTrigger: true,
-    },
-  },
+  modules: ["@nuxtjs/tailwindcss"],
 
   tailwindcss: {
     exposeConfig: true,
@@ -31,6 +26,5 @@ export default defineNuxtConfig({
   },
 
   ssr: false,
-  compatibilityDate: "2024-07-08",
-  devtools: { enabled: true },
+  compatibilityDate: "2024-07-14",
 });

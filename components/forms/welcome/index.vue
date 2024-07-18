@@ -9,7 +9,7 @@
         Спасибо, ваша заявка отправлена! Мы свяжемся с вами в ближайшее время.
       </span>
     </div>
-    <form @submit.prevent="submitForm">
+    <form class="font-benzin" @submit.prevent="submitForm">
       <label class="block relative group">
         <input
           v-model="form.name"

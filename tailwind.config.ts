@@ -22,11 +22,10 @@ export default <Partial<Config>>{
             },
         },
         fontFamily: {
+            //sans: ['Benzin', 'sans-serif'],
             benzin: ['Benzin', 'sans-serif'],
             petrov: ['Petrov', 'sans-serif'],
             manrope: ['Manrope', 'sans-serif'],
-            intro: ['Intro', 'sans-serif'],
-            inter: ['Inter', 'sans-serif'],
         },
         screens: {
             xs: '320px',
@@ -49,7 +48,7 @@ export default <Partial<Config>>{
                 'sm': '0.875rem',
                 'md': '1.3125rem',
                 'lg': '1.75rem',
-                'xl': '4.5rem',
+                'xl': '2.75rem',
                 '2xl': '8.125rem',
                 '3xl': '8.75rem',
             },

@@ -8,7 +8,7 @@
         Спасибо, ваша заявка отправлена! Мы свяжемся с вами в ближайшее время.
       </span>
     </div>
-    <form class="md:mb-10" @submit.prevent="submitForm">
+    <form class="md:mb-10 font-benzin" @submit.prevent="submitForm">
       <label class="block relative group md:mt-[3.75rem] mt-5">
         <input
           v-model="form.email"
@@ -76,7 +76,7 @@
       </div>
       <div class="md:mt-[3.75rem] mt-10">
         <button
-          class="relative uppercase group md:text-lg text-sm"
+          class="font-benzin relative uppercase group md:text-lg text-sm"
           @click="showModal"
         >
           подписаться

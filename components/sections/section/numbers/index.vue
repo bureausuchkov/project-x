@@ -1,5 +1,5 @@
 <template>
-  <div class="relative overflow-hidden md:px-10 px-2.5" id="value">
+  <div class="relative overflow-hidden md:px-10 px-2.5 font-benzin" id="value">
     <div class="relative z-20 numbers flex items-center" ref="scrollNumbers">
       <div class="flex flex-nowrap md:py-25 py-20">
         <div class="number-point-1 shrink-0 max-w-[16.5rem] md:max-w-none md:w-auto w-screen">
@@ -26,6 +26,7 @@
               height="269"
               src="/images/points/point-3.png"
               alt="Здание"
+              loading="lazy"
             />
             <div class="max-w-[28.875rem] min-w-[14rem] xl:ml-[7.5625rem] md:ml-[2.5rem] ml-[1.25rem] mb-5">
               <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 3 }</p>
@@ -44,7 +45,7 @@
               <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 4 }</p>
               <p class="mb-2.5 md:text-lg text-sm uppercase font-medium">516 лет</p>
               <p class="font-petrov md:text-[1.25rem] text-[0.75rem]">
-                разницы между открытием Америки и нашим, <br class="md:block hidden" />
+                разницы между открытием Америки и нашим <br />
                 но у нас тоже амбициозные планы
               </p>
             </div>
@@ -54,12 +55,13 @@
               height="269"
               src="/images/points/point-4.png"
               alt="Здание"
+              loading="lazy"
             />
           </div>
         </div>
         <div class="number-point-1 shrink-0 max-w-[16.5rem] md:max-w-none md:w-auto w-screen flex">
           <div class="flex flex-col flex-1">
-            <div class="max-w-[26.875rem] min-w-[14rem] pr-5 mb-5 xl:ml-[15.625rem] ml-25">
+            <div class="max-w-[26.875rem] min-w-[14rem] pr-5 mb-5 xl:ml-[15.625rem] ml-25 mt-25">
               <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 5 }</p>
               <p class="mb-2.5 md:text-lg text-sm uppercase font-medium">16 лет</p>
               <p class="font-petrov md:text-[1.25rem] text-[0.75rem]">
@@ -83,16 +85,18 @@
       class="numbers-words flex flex-nowrap items-center absolute h-svh top-0 z-10 lg:text-[21.3125rem] md:text-[13.75rem] text-[8.5rem] text-orange uppercase pointer-events-none"
       ref="scrollNumbersWords"
     >
-      <span class="number-word-1 block xl:pr-[18.8125rem] md:pr-[7.5rem] pr-10 shrink-0 min-w-[50vw]">в ци</span>
-      <span class="number-word-1 block xl:pr-[18.8125rem] md:pr-[7.5rem] pr-10 shrink-0 min-w-[50vw] text-center">
-        фр
-      </span>
-      <span class="number-word-1 block md:pr-[3.125rem] pr-10 shrink-0 min-w-[50vw]">ах</span>
+      <span class="number-word-1 block xl:pr-25 md:pr-20 pr-10 shrink-0 md:pt-20">в ци</span>
+      <span class="number-word-1 block xl:pr-25 md:pr-20 pr-10 shrink-0 md:pt-20">фр</span>
+      <span class="number-word-1 block md:pr-[3.125rem] pr-10 shrink-0 md:pt-20">ах</span>
     </div>
   </div>
 </template>
 
 <script setup>
+  import { useWindowSize } from "@vueuse/core";
+
+  const { width } = useWindowSize();
+
   const app = useNuxtApp();
   const scrollNumbers = ref(null);
   const scrollNumbersWords = ref(null);
@@ -102,8 +106,8 @@
     const numbers = app.$gsap.utils.toArray(".number-point-1");
 
     app.$gsap.to(numbers, {
-      xPercent: -110 * (numbers.length - 1),
-      ease: "linear",
+      xPercent: width.value > 768 ? -50 * (numbers.length - 1) : -100 * (numbers.length - 1),
+      ease: "none",
       scrollTrigger: {
         trigger: scrollNumbers.value,
         pin: true,
@@ -113,9 +117,8 @@
       },
     });
 
-    app.$gsap.to(words, {
-      xPercent: -110 * (words.length - 1),
-      yPercent: 25,
+    app.$gsap.to(scrollNumbersWords.value, {
+      xPercent: width.value > 768 ? -60 : -90,
       ease: "none",
       scrollTrigger: {
         trigger: scrollNumbersWords.value,

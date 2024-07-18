@@ -1,6 +1,6 @@
 <template>
-  <div class="flex items-center w-full h-svh">
-    <video width="1903" height="1070" muted loop ref="video" poster="/images/video-holder.png" playsinline src="/images/hero/screen.mp4">
+  <div class="flex items-center w-full md:h-svh">
+    <video class="w-full h-full" muted loop ref="video" poster="/images/video-holder.png" playsinline src="/images/hero/screen.mp4">
       <source src="/images/hero/screen.webm" type="video/webm" />
       <source src="/images/hero/screen.mp4" type="video/mp4" />
       <track src="/images/hero/screen.mp4" kind="captions" srclang="ru" label="Описание" />

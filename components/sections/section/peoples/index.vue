@@ -1,5 +1,5 @@
 <template>
-  <div class="md:px-10 px-2.5 xl:py-26 py-25 overflow-hidden">
+  <div class="md:px-10 px-2.5 2xl:py-26 py-25 overflow-hidden">
     <div
       class="font-benzin scroll-m-[4.375rem] md:grid grid-cols-8 md:pb-20 pb-10 2xl:text-2xl xl:text-xl md:text-[4.5rem] text-[2.1875rem] tracking-[-0.07em] 2xl:leading-[7.3125rem] leading-[100%] ml-5 md:ml-0"
       id="peoples"
@@ -12,7 +12,7 @@
       </p>
     </div>
 
-    <div class="xl:grid xl:grid-cols-8">
+    <div class="xl:grid xl:grid-cols-8 gap-5">
       <div
         class="xl:col-start-1 xl:col-end-5 xl:ml-0 ml-auto sm:ml-0 xl:pb-0 pb-[3.75rem] max-w-[16.0625rem] md:max-w-none"
       >
@@ -43,7 +43,7 @@
         </div>
       </div>
       <div
-        class="xl:row-start-2 xl:row-end-3 xl:col-start-5 xl:col-end-9 items-start row-span max-w-[16.0625rem] sm:ml-auto md:ml-0 md:max-w-[43.75rem] xl:max-w-none pb-[3.75rem] lx:pb-0"
+        class="xl:row-start-2 xl:row-end-3 xl:col-start-4 2xl:col-start-5 xl:col-end-9 items-start row-span max-w-[16.0625rem] sm:ml-auto md:ml-0 md:max-w-[43.75rem] xl:max-w-none pb-[3.75rem] lx:pb-0"
       >
         <div class="flex md:flex-row flex-col gap-5">
           <div>
@@ -73,7 +73,7 @@
         </div>
       </div>
       <div
-        class="xl:row-start-3 xl:row-end-3 gap-5 xl:col-start-1 xl:col-end-5 ml-[3.25rem] xl:ml-0 max-w-[19.5625rem] md:max-w-none"
+        class="xl:row-start-3 xl:row-end-3 gap-5 xl:col-start-1 xl:col-end-6 2xl:col-end-5 ml-[3.25rem] xl:ml-0 max-w-[19.5625rem] md:max-w-none"
       >
         <div class="flex md:flex-row flex-col gap-5 pr-5">
           <div>

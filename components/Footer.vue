@@ -14,7 +14,7 @@
         <div>
           <a
             class="footer-link inline-block uppercase font-medium mt-5 transition-all py-0.5"
-            href="https://vk.com/gsbktmn"
+            href="https://vk.com/mi.harizmi"
             target="_blank"
           >
             вконтакте
@@ -23,7 +23,7 @@
         <div>
           <a
             class="footer-link inline-block uppercase font-medium mt-5 transition-all py-0.5"
-            href="https://t.me/sbk_tyumen"
+            href="https://t.me/HarizMI"
             target="_blank"
           >
             telegram
@@ -40,7 +40,7 @@
       <div class="md:col-start-1 md:col-end-4">
         <div class="flex flex-col justify-end md:mt-0 mt-[4.75rem] h-full">
           <div class="flex justify-center w-full text-[0.75rem] md:hidden">
-            <a class="footer-link block uppercase font-medium" href="https://t.me/sbk_tyumen" target="_blank">
+            <a class="footer-link block uppercase font-medium" href="https://t.me/HarizMI" target="_blank">
               telegram
             </a>
             <a
@@ -50,9 +50,9 @@
             >
               youtube
             </a>
-            <a class="footer-link block uppercase font-medium" href="https://vk.com/gsbktmn" target="_blank"
-              >вконтакте</a
-            >
+            <a class="footer-link block uppercase font-medium" href="https://vk.com/mi.harizmi" target="_blank">
+              вконтакте
+            </a>
           </div>
           <div class="justify-center md:justify-start py-2.5 md:py-0">
             <video

@@ -48,8 +48,9 @@
                     <img src="/images/icons/more.svg" width="51" height="51" alt="Подробнее" />
                   </span>
                 </div>
-                <div class="max-w-[17.125rem] font-manrope md:text-[1.125rem] text-[0.75rem]">
-                  Микрорайон, КРТ, 45 га. 8 очередей, в том числе введено в эксплуатацию 3 очереди
+                <div class="max-w-[310px] font-manrope md:text-[1.125rem] text-[0.75rem]">
+                  Макрорайон, КРТ, 45 га. <br />
+                  8 очередей, в том числе введено в эксплуатацию 3 очереди
                 </div>
               </div>
             </a>

@@ -32,7 +32,7 @@
             <br />
           </span>
         </div>
-        <div class="promo-text md:min-h-[20.75rem] min-h-[84px]">
+        <div class="promo-text md:min-h-[8.125rem] 2xl:min-h-[20.75rem] min-h-[5.25rem]">
           <span class="promo-text 2xl:text-xl md:text-[1.5rem] text-sm md:leading-tight leading-none">
             <br />
             Мы делаем все возможное, чтобы наша работа оставляла яркие следы в сердцах клиентов. Каждый проект — это

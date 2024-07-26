@@ -1,7 +1,7 @@
 <template>
   <div class="relative overflow-hidden md:px-10 px-2.5 font-benzin" id="value">
     <div class="relative z-20 numbers flex items-center" ref="scrollNumbers">
-      <div class="flex flex-nowrap md:py-25 py-20">
+      <div class="flex flex-nowrap 2xl:py-25 py-20">
         <div class="number-point-1 shrink-0 max-w-[16.5rem] md:max-w-none md:w-auto w-screen">
           <div class="z-10 max-w-[27.875rem] min-w-[14rem] xl:mr-[9.375rem] md:mr-[5rem] mr-[1.6875rem]">
             <div class="md:pb-5 pb-2.5 pd:text-sm text-[0.625rem]">{ 1 }</div>
@@ -11,17 +11,17 @@
           </div>
         </div>
         <div class="number-point-1 shrink-0 max-w-[16.5rem] md:max-w-none md:w-auto w-screen">
-          <div class="z-10 mt-20 xl:mr-[10rem] md:mr-[5rem] mr-[2rem]">
+          <div class="z-10 2xl:mt-20 mt-10 xl:mr-[10rem] md:mr-[5rem] mr-[2rem]">
             <div class="mb-2">
               <div class="md:pb-5 pb-2.5 pd:text-sm text-[0.625rem]">{ 2 }</div>
               <div class="pb-2.5 md:text-lg text-sm uppercase font-medium">1 000 футбольных полей</div>
               <div class="font-petrov md:text-[1.25rem] text-[0.75rem]">
-                равен по площади наш земельный банк <br class="md:block hidden" />
+                равен по площади наш земельный банк, <br class="md:block hidden" />
                 мы будем строить!
               </div>
             </div>
             <img
-              class="block xl:mb-[10.25rem] md:mb-[5.625rem] mb-[3.5625rem] min-w-[13.4375rem] md:w-[27.8125rem] w-[13.4375rem]"
+              class="block 2xl:mb-[10.25rem] md:mb-[4.375rem] mb-10 min-w-[13.4375rem] md:w-[27.8125rem] w-[13.4375rem]"
               width="445"
               height="269"
               src="/images/points/point-3.png"
@@ -45,7 +45,7 @@
               <p class="md:mb-5 mb-2.5 md:text-sm text-[0.625rem]">{ 4 }</p>
               <p class="mb-2.5 md:text-lg text-sm uppercase font-medium">516 лет</p>
               <p class="font-petrov md:text-[1.25rem] text-[0.75rem]">
-                разницы между открытием Америки и нашим <br />
+                разницы между открытием Америки и нашим, <br />
                 но у нас тоже амбициозные планы
               </p>
             </div>
@@ -106,7 +106,7 @@
     const numbers = app.$gsap.utils.toArray(".number-point-1");
 
     app.$gsap.to(numbers, {
-      xPercent: width.value > 768 ? -50 * (numbers.length - 1) : -100 * (numbers.length - 1),
+      xPercent: width.value > 768 ? -70 * (numbers.length - 1) : -100 * (numbers.length - 1),
       ease: "none",
       scrollTrigger: {
         trigger: scrollNumbers.value,
@@ -118,7 +118,7 @@
     });
 
     app.$gsap.to(scrollNumbersWords.value, {
-      xPercent: width.value > 768 ? -60 : -90,
+      xPercent: width.value > 768 ? -70 : -90,
       ease: "none",
       scrollTrigger: {
         trigger: scrollNumbersWords.value,

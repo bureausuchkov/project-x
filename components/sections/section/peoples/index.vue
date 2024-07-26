@@ -21,11 +21,10 @@
             <div class="people-image overflow-hidden">
               <img
                 class="object-cover xl:max-w-none"
-                src="/images/peoples/people-1.png"
+                src="/images/peoples/people-1.webp"
                 alt="Александр Мильченко"
-                width="445"
-                height="728"
-                loading="lazy"
+                width="440"
+                height="550"
               />
             </div>
           </div>
@@ -50,11 +49,10 @@
             <div class="people-image overflow-hidden">
               <img
                 class="object-cover xl:max-w-none"
-                src="/images/peoples/people-2.png"
+                src="/images/peoples/people-2.webp"
                 alt="Александр Перминов"
-                width="445"
-                height="728"
-                loading="lazy"
+                width="388"
+                height="582"
               />
             </div>
           </div>
@@ -80,11 +78,10 @@
             <div class="people-image overflow-hidden">
               <img
                 class="object-cover xl:max-w-none"
-                src="/images/peoples/people-3.png"
+                src="/images/peoples/people-3.webp"
                 alt="Максим Замятин"
-                width="445"
-                height="728"
-                loading="lazy"
+                width="388"
+                height="582"
               />
             </div>
           </div>

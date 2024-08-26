@@ -1,6 +1,6 @@
 <template>
   <div class="relative pb-2">
-    <div class="md:text-lg md:mb-[6.75rem] mb-10 pr-5">{{ title }}</div>
+    <div class="md:text-lg md:mb-[6.75rem] mb-10 pr-5" v-html="title"></div>
     <div
       class="flex items-center bg-black absolute inset-0 z-20 text-lg"
       v-if="success"

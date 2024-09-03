@@ -12,7 +12,7 @@
       :class="{ 'block translate-y-0 bg-white': isOpenMenu }"
     >
       <nav class="mx-auto md:mt-0 mt-10">
-        <ul class="md:flex gap-5 uppercase">
+        <ul class="md:flex gap-2.5 md:gap-5 uppercase">
           <li class="md:mb-0 mb-10" @click="closeMenu">
             <span class="block text-[0.625rem] mb-2.5 md:hidden"> { 1 } </span>
             <a
@@ -107,11 +107,9 @@
 
   function openMenu() {
     isOpenMenu.value = !isOpenMenu.value;
-    document.body.classList.toggle("overflow-hidden");
   }
   function closeMenu() {
     isOpenMenu.value = false;
-    document.body.classList.remove("overflow-hidden");
     emit('close')
   }
 

@@ -1,6 +1,6 @@
 <template>
   <transition name="fade">
-    <div v-if="showLoader" class="fixed z-50 inset-0">
+    <div v-show="showLoader" class="fixed z-50 inset-0">
       <svg viewBox="0 0 1000 1000" preserveAspectRatio="none" class="w-full h-full">
         <path class="bluee" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
       </svg>
@@ -14,7 +14,7 @@
   const { $gsap: gsap } = useNuxtApp();
 
   onMounted(() => {
-    nextTick(() => {
+    onNuxtReady(() => {
       let loader = gsap.timeline({ yoyo: true });
 
       loader

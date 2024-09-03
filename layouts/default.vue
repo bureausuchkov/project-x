@@ -1,16 +1,17 @@
 <template>
-  <div class="web-app">
-    <div class="screen">
+  <div class="web-app overflow-hidden">
+    <div>
       <Loader />
       <Header @mouseover="stopScroll" @mouseleave="startScroll" @close="startScroll" />
-      <div id="scene">
-        <div class="bg-white">
+      <div class="w-screen" id="scene">
+        <div class="bg-white relative z-10">
           <slot />
         </div>
-        <div :style="{ marginTop: `${footerHeight}px` }">
-          <div class="fixed bottom-0 left-0 w-full bg-white -z-10" ref="footer">
+        <div>
+          <div class="fixed bottom-0 left-0 bg-white w-screen" ref="footer">
             <Footer />
           </div>
+          <div class="pointer-events-none" :style="{height : `${footerHeight}px`}"></div>
         </div>
       </div>
     </div>
@@ -18,6 +19,7 @@
 </template>
 
 <script setup>
+  import { useWindowSize } from "@vueuse/core";
   import Lenis from "@studio-freight/lenis";
   const footer = ref(null);
   const footerHeight = ref(0);
@@ -29,11 +31,17 @@
     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
   });
 
+  const { width } = useWindowSize();
+
   function stopScroll() {
-    lenis.stop();
+    if(width.value > 1024) {
+      lenis.stop();
+    }
   }
   function startScroll() {
-    lenis.start();
+    if(width.value > 1024) {
+      lenis.start();
+    }
   }
 
   onMounted(() => {
@@ -42,7 +50,7 @@
       ScrollTrigger.update();
       requestAnimationFrame(raf);
     }
-
+    
     requestAnimationFrame(raf);
 
     footerHeight.value = footer.value.offsetHeight;

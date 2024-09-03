@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center w-full md:h-svh">
+  <div class="flex items-center w-full md:h-svh md:pt-0 pt-14">
     <video class="w-full h-full" muted loop ref="video" poster="/images/video-holder.png" playsinline src="/images/hero/screen.mp4">
       <source src="/images/hero/screen.webm" type="video/webm" />
       <source src="/images/hero/screen.mp4" type="video/mp4" />

@@ -26,7 +26,16 @@
         </span>
         <span class="welcome-char block text-orange">ПЛОЩАДИ</span>
       </p>
-    </div>
+      <div class="md:grid md:grid-cols-8 text-white">
+        <p
+          class="welcome-words md:col-start-1 md:col-end-7 uppercase 2xl:text-2xl xl:text-xl md:text-[62px] text-[2.1875rem] tracking-[-0.07em] 2xl:leading-[7.3125rem] leading-[100%] md:pb-[4.375rem] pb-10"
+        >
+          <span class="welcome-char block">приглашаем</span>
+          <span class="welcome-char block ml-5 md:ml-[4.5rem] lx:ml-[14.5rem] text-nowrap">стать частью </span>
+          <span class="welcome-char block ml-5 md:ml-[4.5rem] lx:ml-[14.5rem] text-orange text-nowrap">нашей</span>
+          <span class="welcome-char block text-orange">команды</span>
+        </p>
+      </div>
 
     <div class="md:grid md:grid-cols-8">
       <div
@@ -37,7 +46,7 @@
         />
       </div>
     </div>
-  </div>
+  </client-only>
 </template>
 
 <script setup>

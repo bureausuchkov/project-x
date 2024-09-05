@@ -1,7 +1,7 @@
 export default defineEventHandler(async (event) => {
   const body = await readBody(event);
   const config = useRuntimeConfig();
-  async function sendTelegram(data) {
+  async function sendTelegram(data, leadId) {
     const token = config.TELEGRAM_BOT_TOKEN;
     const idChat = config.TELEGRAM_CHAT_ID;
 
@@ -20,6 +20,10 @@ export default defineEventHandler(async (event) => {
       .map(([key, value]) => `${translateKey(key)}: ${value}`)
       .join("\n");
 
+    if (leadId) {
+      text += `\n\nbitrixID: ${leadId}`;
+    }
+
     text = encodeURIComponent(text);
     const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${idChat}&text=${text}`;
 
@@ -35,15 +39,38 @@ export default defineEventHandler(async (event) => {
     }
   }
   async function sendWebhook(data) {
-    const webhookUrl =
+    const baseUrl =
       "https://portal.gsbk.ru/rest/4780/ybfnxycfrf1tofll/crm.lead.add";
 
-    const payload = JSON.stringify(data);
+    const encodeValue = (value) => (value ? encodeURIComponent(value) : "");
 
+    const queryParams = new URLSearchParams({
+      "fields[TITLE]": encodeValue(
+        `Заявка c сайта: harizmi.ru, Тип: ${data.type || "Неизвестно"}`
+      ),
+      "fields[WEB][0][VALUE]": "harizmi.ru",
+      "fields[WEB][0][VALUE_TYPE]": "WORK",
+    });
+
+    // Добавляем поля только если они существуют
+    if (data?.name) {
+      queryParams.append("fields[NAME]", encodeValue(data.name));
+    }
+
+    if (data?.phone) {
+      queryParams.append("fields[PHONE][0][VALUE]", encodeValue(data.phone));
+      queryParams.append("fields[PHONE][0][VALUE_TYPE]", "WORK");
+    }
+
+    if (data?.email) {
+      queryParams.append("fields[EMAIL][0][VALUE]", data.email);
+      queryParams.append("fields[EMAIL][0][VALUE_TYPE]", "WORK");
+    }
+    const webhookUrl = `${baseUrl}?${queryParams.toString()}`;
+    console.log("Webhook URL:", webhookUrl.toString());
     try {
       const response = await fetch(webhookUrl, {
         method: "POST",
-        body: payload,
       });
 
       if (!response.ok) {
@@ -51,7 +78,8 @@ export default defineEventHandler(async (event) => {
           `Failed to send data to webhook: ${response.statusText}`
         );
       }
-      return true;
+      const responseData = await response.json();
+      return responseData.result;
     } catch (error) {
       console.error("Error sending to webhook:", error);
       throw error;
@@ -59,8 +87,9 @@ export default defineEventHandler(async (event) => {
   }
 
   try {
-    await sendTelegram(body);
-    await sendWebhook(body);
+    const leadId = await sendWebhook(body);
+    await sendTelegram(body, leadId);
+
     return { success: true, message: "Message sent to Telegram" };
   } catch (error) {
     return { success: false, message: error.message };

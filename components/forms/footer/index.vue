@@ -118,7 +118,7 @@ const rules = computed(() => ({
 }));
 
 const v$ = useVuelidate(rules, { form });
-const { success, sendForm } = useSendForm("Подписка на рассылку");
+const { success, sendForm } = useSendForm("Стать частью команды");
 const submitForm = async () => {
   isFormCorrect.value = await v$.value.$validate();
 

@@ -4,7 +4,7 @@ export default function useSendForm(type) {
   const success = ref(false);
 
   async function sendForm(form) {
-    const { data } = await useFetch("/api/send-telegram", {
+    const { data } = await useFetch("/api/send", {
       method: "POST",
       body: { type: type, ...form },
     });

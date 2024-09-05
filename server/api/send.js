@@ -45,20 +45,21 @@ export default defineEventHandler(async (event) => {
     const encodeValue = (value) => (value ? encodeURIComponent(value) : "");
 
     const queryParams = new URLSearchParams({
-      "fields[TITLE]": encodeValue(
-        `Заявка c сайта: harizmi.ru, Тип: ${data.type || "Неизвестно"}`
-      ),
+      "fields[TITLE]": `Заявка c сайта: harizmi.ru, Тип: ${
+        data.type || "Неизвестно"
+      }`,
       "fields[WEB][0][VALUE]": "harizmi.ru",
       "fields[WEB][0][VALUE_TYPE]": "WORK",
+      "fields[SOURCE_ID]": "9091902019",
     });
 
     // Добавляем поля только если они существуют
     if (data?.name) {
-      queryParams.append("fields[NAME]", encodeValue(data.name));
+      queryParams.append("fields[NAME]", data.name);
     }
 
     if (data?.phone) {
-      queryParams.append("fields[PHONE][0][VALUE]", encodeValue(data.phone));
+      queryParams.append("fields[PHONE][0][VALUE]", data.phone);
       queryParams.append("fields[PHONE][0][VALUE_TYPE]", "WORK");
     }
 

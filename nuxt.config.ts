@@ -18,7 +18,7 @@ export default defineNuxtConfig({
     TELEGRAM_CHAT_ID: process.env.TELEGRAM_CHAT_ID,
   },
   css: ["normalize.css", "vue-final-modal/style.css"],
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxt/scripts"],
 
   tailwindcss: {
     exposeConfig: true,
@@ -27,4 +27,11 @@ export default defineNuxtConfig({
 
   ssr: false,
   compatibilityDate: "2024-07-14",
+  scripts: {
+    registry: {
+      googleTagManager: {
+        id: "GTM-WWLKDGZT",
+      },
+    },
+  },
 });

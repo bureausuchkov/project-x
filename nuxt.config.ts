@@ -6,7 +6,7 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: "RU",
       },
-      title: "Харизмы",
+      title: "ХаризМЫ, официальный сайт - застройщик в Тюмени, девелоперская компания",
 
       link: [{ rel: "shortcut icon", href: "favicon.ico" }],
       script: [
@@ -21,7 +21,7 @@ export default defineNuxtConfig({
           type: "text/javascript",
         }
       ],
-      meta: [{ hid: "description", name: "description", content: "Харизмы" }],
+      meta: [{ hid: "description", name: "description", content: "Официальный сайт ХаризМЫ. Строительство и продажа недвижимости в Тюмени. Каталог проектов от застройщика. Цены на квартиры и коммерческую недвижимость в новостройках." }],
     },
   },
   runtimeConfig: {
